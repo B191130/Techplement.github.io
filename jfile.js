@@ -1,4 +1,4 @@
-// Function to fetch weather data from the API based on user input
+
 function searchWeather() {
     const cityName = document.getElementById("city-input").value.trim();
     if (cityName) {
@@ -10,7 +10,7 @@ function searchWeather() {
 
 // Function to fetch weather data from the API
 function fetchWeatherData(cityName) {
-    const apiKey = 'd07624d94b339e686f4573049e57c20c'; // Replace 'YOUR_API_KEY' with your actual API key
+    const apiKey = 'd07624d94b339e686f4573049e57c20c';
     const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&units=metric&appid=${apiKey}`;
 
     fetch(apiUrl)
